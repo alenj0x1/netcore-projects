@@ -1,0 +1,15 @@
+G:\alemndev\Github\netcore-projects\address-book\bin\Debug\net8.0\address-book.exe
+G:\alemndev\Github\netcore-projects\address-book\bin\Debug\net8.0\address-book.deps.json
+G:\alemndev\Github\netcore-projects\address-book\bin\Debug\net8.0\address-book.runtimeconfig.json
+G:\alemndev\Github\netcore-projects\address-book\bin\Debug\net8.0\address-book.dll
+G:\alemndev\Github\netcore-projects\address-book\bin\Debug\net8.0\address-book.pdb
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.GeneratedMSBuildEditorConfig.editorconfig
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.AssemblyInfoInputs.cache
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.AssemblyInfo.cs
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.csproj.CoreCompileInputs.cache
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.sourcelink.json
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.dll
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\refint\address-book.dll
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.pdb
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\address-book.genruntimeconfig.cache
+G:\alemndev\Github\netcore-projects\address-book\obj\Debug\net8.0\ref\address-book.dll
