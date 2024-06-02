@@ -1,0 +1,14 @@
+G:\alemndev\Github\netcore-projects\console-calculator\bin\Debug\net8.0\console-calculator.exe
+G:\alemndev\Github\netcore-projects\console-calculator\bin\Debug\net8.0\console-calculator.deps.json
+G:\alemndev\Github\netcore-projects\console-calculator\bin\Debug\net8.0\console-calculator.runtimeconfig.json
+G:\alemndev\Github\netcore-projects\console-calculator\bin\Debug\net8.0\console-calculator.dll
+G:\alemndev\Github\netcore-projects\console-calculator\bin\Debug\net8.0\console-calculator.pdb
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.GeneratedMSBuildEditorConfig.editorconfig
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.AssemblyInfoInputs.cache
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.AssemblyInfo.cs
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.csproj.CoreCompileInputs.cache
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.dll
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\refint\console-calculator.dll
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.pdb
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\console-calculator.genruntimeconfig.cache
+G:\alemndev\Github\netcore-projects\console-calculator\obj\Debug\net8.0\ref\console-calculator.dll
