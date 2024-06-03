@@ -1,0 +1,15 @@
+G:\alemndev\Github\netcore-projects\task-manager\bin\Debug\net8.0\task-manager.exe
+G:\alemndev\Github\netcore-projects\task-manager\bin\Debug\net8.0\task-manager.deps.json
+G:\alemndev\Github\netcore-projects\task-manager\bin\Debug\net8.0\task-manager.runtimeconfig.json
+G:\alemndev\Github\netcore-projects\task-manager\bin\Debug\net8.0\task-manager.dll
+G:\alemndev\Github\netcore-projects\task-manager\bin\Debug\net8.0\task-manager.pdb
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.GeneratedMSBuildEditorConfig.editorconfig
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.AssemblyInfoInputs.cache
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.AssemblyInfo.cs
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.csproj.CoreCompileInputs.cache
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.sourcelink.json
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.dll
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\refint\task-manager.dll
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.pdb
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\task-manager.genruntimeconfig.cache
+G:\alemndev\Github\netcore-projects\task-manager\obj\Debug\net8.0\ref\task-manager.dll
