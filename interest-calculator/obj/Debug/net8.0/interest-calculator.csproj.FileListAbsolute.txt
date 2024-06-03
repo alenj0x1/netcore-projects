@@ -1,0 +1,15 @@
+G:\alemndev\Github\netcore-projects\interest-calculator\bin\Debug\net8.0\interest-calculator.exe
+G:\alemndev\Github\netcore-projects\interest-calculator\bin\Debug\net8.0\interest-calculator.deps.json
+G:\alemndev\Github\netcore-projects\interest-calculator\bin\Debug\net8.0\interest-calculator.runtimeconfig.json
+G:\alemndev\Github\netcore-projects\interest-calculator\bin\Debug\net8.0\interest-calculator.dll
+G:\alemndev\Github\netcore-projects\interest-calculator\bin\Debug\net8.0\interest-calculator.pdb
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.GeneratedMSBuildEditorConfig.editorconfig
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.AssemblyInfoInputs.cache
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.AssemblyInfo.cs
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.csproj.CoreCompileInputs.cache
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.sourcelink.json
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.dll
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\refint\interest-calculator.dll
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.pdb
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\interest-calculator.genruntimeconfig.cache
+G:\alemndev\Github\netcore-projects\interest-calculator\obj\Debug\net8.0\ref\interest-calculator.dll
