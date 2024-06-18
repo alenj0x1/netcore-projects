@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alemndev\\source\\repos\\cache\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|c:\\users\\alemndev\\source\\repos\\cache\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|c:\\users\\alemndev\\source\\repos\\cache\\dependencies\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|solutionrelative:dependencies\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|c:\\users\\alemndev\\source\\repos\\cache\\dependencies\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|solutionrelative:dependencies\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|c:\\users\\alemndev\\source\\repos\\cache\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|c:\\users\\alemndev\\source\\repos\\cache\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F647A6B1-7B02-4296-A254-4CAD7CAE21E7}|cache.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\alemndev\\source\\repos\\cache\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\alemndev\\source\\repos\\cache\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:06:24.335Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\alemndev\\source\\repos\\cache\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\alemndev\\source\\repos\\cache\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:16:17.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\alemndev\\source\\repos\\cache\\Dependencies\\Contract\\IUserService.cs",
+              "RelativeDocumentMoniker": "Dependencies\\Contract\\IUserService.cs",
+              "ToolTip": "C:\\Users\\alemndev\\source\\repos\\cache\\Dependencies\\Contract\\IUserService.cs",
+              "RelativeToolTip": "Dependencies\\Contract\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:11:57.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alemndev\\source\\repos\\cache\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\alemndev\\source\\repos\\cache\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:10:32.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\alemndev\\source\\repos\\cache\\Dependencies\\UserService.cs",
+              "RelativeDocumentMoniker": "Dependencies\\UserService.cs",
+              "ToolTip": "C:\\Users\\alemndev\\source\\repos\\cache\\Dependencies\\UserService.cs",
+              "RelativeToolTip": "Dependencies\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T03:04:24.409Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
