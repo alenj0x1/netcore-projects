@@ -22,15 +22,24 @@
       }
 
       body {
-        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.5)), url("https://imgix.bustle.com/uploads/image/2022/8/25/7e4b684c-1f25-43c0-bac7-e238d1702f2a-twice1.JPG");
+        background: rgb(35, 35, 35);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
       }
 
+      .box-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 60px;
+      }
+
       .title {
         font-size: 5rem; color: rgb(255, 255, 255);
+        margin: 0;
       }
 
       .pink {
@@ -38,20 +47,31 @@
       }
 
       .subtitle {
+        margin: 0;
         font-size: 3.5rem; color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background: palevioletred;
+        padding: 20px 40px;
+        border-radius: 5px;
+        gap: 20px;
+        text-align: left;
+        transition-duration: 100ms;
+        color: white;
       }
 
       #songs {
         padding: 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px 0;
-      }
+        margin: 40px;
+        border-radius: 10px;
+        display: grid;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
-      .box-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-color: rgb(41, 41, 41);
       }
 
       .audioPlayer-box {
@@ -62,74 +82,155 @@
       }
 
       .song-box {
-        background: linear-gradient(to bottom, rgba(210, 115, 150, 0.3), rgba(210, 115, 150, 0.3));
-        border: 1px solid palevioletred;
+        background: rgba(50, 50, 50);
         padding: 20px 40px;
         border-radius: 5px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
         align-items: center;
         font-size: 1.3rem;
         transition-duration: 100ms;
         color: white;
-        border-bottom: 5px solid palevioletred;
+        border-bottom: 5px solid rgba(216, 112, 147, 0.3);
       }
 
       .song-box:hover {
+        background: rgba(52, 52, 52);
         transform: scale(1.01);
-        transition-duration: 100ms;
-        background: linear-gradient(to top, rgba(210, 115, 150, 0.4), rgba(210, 115, 150, 0.4));
+        border-bottom: 5px solid rgba(216, 112, 147, 0.6);
       }
 
+      .song-box-current {
+        background: palevioletred;
+        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .song-box-current:hover {
+        background: rgb(216, 108, 144);
+        border-bottom: 5px solid rgba(255, 255, 255, 0.6);
+      }
+
+
       .btn-play-song {
+        width: 100%;
         padding: 10px 25px;
         cursor: pointer;
-        background-color: rgba(216, 112, 147, 0.2);
-        border: 1px solid rgba(216, 112, 147, 0.404);
+        background-color: rgba(45, 45, 45);
+        border: 1px solid rgba(60, 60, 60);
         color: white;
         border-radius: 10px;
-        transition-duration: 200ms;
         font-size: 1rem;
+        transition-duration: 200ms;
       }
 
       .btn-play-song:hover {
-        background-color: rgba(216, 112, 147, 0.4);
-        border: 1px solid rgba(216, 112, 147, 0.6);
+        background-color: rgba(45, 45, 45);
+        border: 1px solid rgba(216, 112, 147, 0.3);
+        transition-duration: 200ms;
+      }
+
+      .audio-box {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        background-color: rgb(247, 247, 247);
+        padding: 20px 30px;
+        border-radius: 10px;
+        border: 5px solid rgb(235, 235, 235);
+
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 20px;
+
+        z-index: 2;
+      }
+
+      .audio-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px 0;
+      }
+
+      #currentSong {
+        color: palevioletred;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      #nextSong {
+        color: rgb(226, 122, 157);
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      #auduiPlayer::-webkit-media-controls
+
+      .hidden {
+        display: none;
       }
 
       @media (max-width: 768px) {
+        #songs {
+          margin: 40px 10px;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+        
         .song-box {
-          flex-direction: column;
-          gap: 20px;
           font-size: 1rem;
-          text-align: center;
         }
 
-        .btn-play-song {
-          width: 100%;
+        #currentSong {
+          font-size: 0.9rem;
+        }
+
+        #nextSong {
+          font-size: 0.8rem;
         }
       }
     </style>
 </head>
 <body>
-    <div id="songs">
-      <div class="box-header">
-        <h1 class="title"><span class="pink">twice</span> radio</h1>
-
-        <audio id="audioPlayer" controls></audio>
-
-        <h2 id="songs-title" class="subtitle">songs</h2>
+    <div id="audio-box" class="audio-box">
+      <div class="audio-text-box">
+        <span id="currentSong">Waiting for playing a song!</span>
+        <span id="nextSong"></span>
       </div>
+
+      <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <div class="box-header">
+      <h1 class="title"><span class="pink">twice</span> radio</h1>
+    </div>
+
+    <div id="songs">
+      <h2 id="songs-title" class="subtitle">songs</h2>
     </div>
 
     <script>
-        let song = "";
+        let currentSongIndex;
         let songs = [];
-        let audioPlayerCurrentSongElement = document.getElementById("audioPlayer-currentsong");
+        let nextSong = 0;
+
+        let songBoxes;
+
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        audioPlayer.addEventListener('ended', () => {
+          if (songs.length + 1 >= nextSong)
+          {
+            playSong(songs[nextSong]);
+          }
+        }, false)
 
         function playSong(song)
         {
-          const audioPlayer = document.getElementById('audioPlayer');
+          currentSongIndex = songs.indexOf(song);
+
           const apiUrl = `http://localhost:5244/r/${song}`;
 
           fetch(apiUrl)
@@ -140,9 +241,20 @@
                   return response.blob();
               })
               .then(blob => {
+                  const audioBoxElement = document.getElementById('audio-box');
+
+                  if (audioBoxElement.classList.contains('hidden')) audioBoxElement.classList.remove('hidden');
+
                   const url = URL.createObjectURL(blob);
                   audioPlayer.src = url;
                   audioPlayer.play();
+
+                  nextSong = currentSongIndex + 1;
+
+                  setCurrentSongStyle();
+
+                  document.getElementById("currentSong").textContent = `Playing now: ${song}`;
+                  document.getElementById("nextSong").textContent = `Next song: ${songs[nextSong]}`;
               })
               .catch(error => {
                   console.error('There has been a problem with your fetch operation:', error);
@@ -162,23 +274,40 @@
 
                     songs.map((song, index) => {
                       songsElement.innerHTML += `                          
-                          <div class='song-box'>
+                          <div class='song-box' data-song='${song}'>
                             <span>${index + 1}. ${song}</span>
                             <button data-song="${song}" class="btn-play-song">▶ Reproducir</button>
                           </div>
                           `
                     })
 
+                    document.getElementById('songs-title').textContent = `${songs.length} songs`
+
                     document.querySelectorAll('.btn-play-song').forEach(btn => {
                       btn.addEventListener('click', () => {
-                        playSong(btn.dataset.song)
+                        playSong(btn.dataset.song);
                       })
                     })
+
+                    songBoxes = document.querySelectorAll('.song-box');
                 })
                 .catch(error => {
                     console.error('There has been a problem with your fetch operation:', error);
                 });
         })
+
+        function setCurrentSongStyle()
+        {
+          songBoxes.forEach((songBox, index) => {
+            if (index == currentSongIndex)
+            {
+              songBox.classList.add('song-box-current');
+            }
+            else {
+              if (songBox.classList.contains('song-box-current')) songBox.classList.remove('song-box-current');
+            }
+          })
+        }
     </script>
 </body>
 </html>
