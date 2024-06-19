@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐ twice radio ⭐</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+      ::-webkit-scrollbar {
+        background-color: black;
+        width: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: palevioletred;
+      }
+
+      * {
+        font-family: "Quicksand", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.5)), url("https://imgix.bustle.com/uploads/image/2022/8/25/7e4b684c-1f25-43c0-bac7-e238d1702f2a-twice1.JPG");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+
+      .title {
+        font-size: 5rem; color: rgb(255, 255, 255);
+      }
+
+      .pink {
+        color: palevioletred;
+      }
+
+      .subtitle {
+        font-size: 3.5rem; color: rgb(255, 255, 255);
+      }
+
+      #songs {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+      }
+
+      .box-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .audioPlayer-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 0;
+      }
+
+      .song-box {
+        background: linear-gradient(to bottom, rgba(210, 115, 150, 0.3), rgba(210, 115, 150, 0.3));
+        border: 1px solid palevioletred;
+        padding: 20px 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+        transition-duration: 100ms;
+        color: white;
+        border-bottom: 5px solid palevioletred;
+      }
+
+      .song-box:hover {
+        transform: scale(1.01);
+        transition-duration: 100ms;
+        background: linear-gradient(to top, rgba(210, 115, 150, 0.4), rgba(210, 115, 150, 0.4));
+      }
+
+      .btn-play-song {
+        padding: 10px 25px;
+        cursor: pointer;
+        background-color: rgba(216, 112, 147, 0.2);
+        border: 1px solid rgba(216, 112, 147, 0.404);
+        color: white;
+        border-radius: 10px;
+        transition-duration: 200ms;
+        font-size: 1rem;
+      }
+
+      .btn-play-song:hover {
+        background-color: rgba(216, 112, 147, 0.4);
+        border: 1px solid rgba(216, 112, 147, 0.6);
+      }
+
+      @media (max-width: 768px) {
+        .song-box {
+          flex-direction: column;
+          gap: 20px;
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        .btn-play-song {
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div id="songs">
+      <div class="box-header">
+        <h1 class="title"><span class="pink">twice</span> radio</h1>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <h2 id="songs-title" class="subtitle">songs</h2>
+      </div>
+    </div>
+
+    <script>
+        let song = "";
+        let songs = [];
+        let audioPlayerCurrentSongElement = document.getElementById("audioPlayer-currentsong");
+
+        function playSong(song)
+        {
+          const audioPlayer = document.getElementById('audioPlayer');
+          const apiUrl = `http://localhost:5244/r/${song}`;
+
+          fetch(apiUrl)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                  }
+                  return response.blob();
+              })
+              .then(blob => {
+                  const url = URL.createObjectURL(blob);
+                  audioPlayer.src = url;
+                  audioPlayer.play();
+              })
+              .catch(error => {
+                  console.error('There has been a problem with your fetch operation:', error);
+              });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          fetch("http://localhost:5244/r/getSongs")
+                .then(async response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    
+                    songs = await response.json()
+
+                    const songsElement = document.getElementById("songs");
+
+                    songs.map((song, index) => {
+                      songsElement.innerHTML += `                          
+                          <div class='song-box'>
+                            <span>${index + 1}. ${song}</span>
+                            <button data-song="${song}" class="btn-play-song">▶ Reproducir</button>
+                          </div>
+                          `
+                    })
+
+                    document.querySelectorAll('.btn-play-song').forEach(btn => {
+                      btn.addEventListener('click', () => {
+                        playSong(btn.dataset.song)
+                      })
+                    })
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+        })
+    </script>
+</body>
+</html>
