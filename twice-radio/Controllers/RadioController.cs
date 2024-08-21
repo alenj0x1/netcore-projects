@@ -33,7 +33,7 @@ namespace twice_radio.Controllers
     [HttpGet("getSongs")]
     public IActionResult GetSongs()
     {
-      return Ok(JsonSerializer.Serialize(_musics.Select(file => Path.GetFileName(file))));
+      return Ok(JsonSerializer.Serialize(_musics.Select(file => Path.GetFileName(file).Replace(".mp3", "").Replace(".m4a", ""))));
     }
   }
 }
